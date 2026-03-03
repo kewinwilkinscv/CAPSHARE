@@ -42,7 +42,7 @@ cursor.execute("""
 conn.commit()
 
 app.layout = html.Div(className="container mt-4", children=[
-    html.H1("OPTIVENT: A Forecaster By C V Kewin Wilkins", className="text-center mb-4 text-primary"),
+    html.H1("OPTIVENT: A Forecaster", className="text-center mb-4 text-primary"),
 
     # Filters
     html.Div(className="row mb-3", children=[
@@ -202,3 +202,4 @@ def handle_past_data(save_click, view_click, delete_click, start_date, end_date,
 server = app.server
 if __name__ == "__main__":
     app.run(debug=False)
+
